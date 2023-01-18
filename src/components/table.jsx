@@ -59,12 +59,12 @@ export function TableItems( {userData} ) {
     )
 }
 
-export default function Table({ userID }) {
-    console.log(userID,'id')
-    const refineData = userData.data[userID];
-    console.log('refine data', refineData)
-    const listItems = refineData.data.map((item) => 
-        <TableItems userData={item} userID={userID} key={item.id}/> 
+export default function Table({ userData }) {
+    // const refineData = userData.data[userID];
+    // console.log('refine data', refineData)
+    console.log('userdata', userData)
+    const listItems = userData.data.map((item) => 
+        <TableItems userData={item} key={item.id}/> 
     )
 
     return (

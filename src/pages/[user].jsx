@@ -9,17 +9,29 @@ export default function Home({ data }) {
     <div>
       <LinkNav /> 
       <Background /> 
-      <div className="container mx-auto pl-32 pr-32 pt-20 sm:pt-48 align-middle h-2/3"> 
-        <Table userID={data}/> 
+      <div className="container mx-auto sm:px-16 px-4 pt-20 pt-48 align-middle h-2/3"> 
+      {data && <Table userData={data}/>}
+        {/* add 404 component here */}
       </div>
     </div>
 
   )
 }
 
+
 export async function getServerSideProps( context ) {
-    console.log('pid', context.query.user)
+    const res = await fetch('https://userdata-test-52c35-default-rtdb.firebaseio.com/data.json')
+    const posts = await res.json()
+    if (!posts[context.query.user]) {
+      return {
+        redirect: {
+          destination: '/404',
+          permanent: false,
+        }
+    }
+  }
+    const exactData = posts[context.query.user]
     return {
-      props: {data: context.query.user}, // will be passed to the page component as props
+      props: {data: exactData}, // will be passed to the page component as props
     }
   }
