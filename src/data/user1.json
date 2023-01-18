@@ -1,0 +1,31 @@
+{"data": 
+    {
+    "user": {
+        "id": "1",
+        "prettyName": "tester",
+        "data": [
+            {"productName": "Laptop", "price": "19.99", "link": "google.com", "id": 1},
+            {"productName": "Speaker", "price": "30.99", "link": "google.com", "id": 2},
+            {"productName": "Camera", "price": "3000", "link": "google.com", "id": 3}
+        ]
+    },
+    "user2": {
+        "id": "1",
+        "prettyName": "tester",
+        "data": [
+            {"productName": "asdf", "price": "19.99", "link": "google.com", "id": 1},
+            {"productName": "Speaker", "price": "30.99", "link": "google.com", "id": 2},
+            {"productName": "Camera", "price": "3000", "link": "google.com", "id": 3}
+        ]
+    },
+    "user3": {
+        "id": "1",
+        "prettyName": "tester",
+        "data": [
+            {"productName": "Laptop", "price": "19.99", "link": "google.com", "id": 1},
+            {"productName": "334r2", "price": "323420.99", "link": "google.com", "id": 2},
+            {"productName": "Camera", "price": "3000", "link": "google.com", "id": 3}
+        ]
+    }
+}
+}
