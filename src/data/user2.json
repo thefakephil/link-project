@@ -1,9 +1,9 @@
-{"user": {
-    "id": "2",
-    "prettyName": "File",
-    "data": [
-        {"productName": "Laptop", "price": "19.99", "link": "google.com"},
-        {"productName": "Speaker", "price": "30.99", "link": "google.com"},
-        {"productName": "Camera", "price": "3000", "link": "google.com"}
-      ]
-  }}
+
+    {
+
+        "data": [
+            {"productName": "Laptop", "price": "19.99", "link": "google.com", "id": 1},
+            {"productName": "Speaker", "price": "30.99", "link": "google.com", "id": 2},
+            {"productName": "Camera", "price": "3000", "link": "google.com", "id": 3}
+        ]
+    }

@@ -12,7 +12,7 @@ export default function Home({ data }) {
       <div className='grid place-items-center pt-20'> 
         <Avatar /> 
       </div> 
-      <div className="container mx-auto sm:px-28 px-4 pt-20 align-middle h-2/3"> 
+      <div className="container mx-auto lg:px-48 px-4 pt-20 align-middle h-2/3"> 
       {data && <Table userData={data}/>}
         {/* add 404 component here */}
       </div>

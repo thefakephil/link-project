@@ -18,7 +18,7 @@ export function TableItems( {userData} ) {
                    <td className="px-6 py-4">
                        {userData.price}
                    </td>
-                   <td className="px-6 py-4">
+                   <td className="px-6 py-4 flex flex-col items-center">
                        <Button /> 
                        {/* <a href={`${userData.link}`} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Click Through</a> */}
                    </td>
@@ -58,13 +58,13 @@ export function TableItems( {userData} ) {
                    </td>
                </tr> */}
            </tbody>
+
     )
 }
 
 export default function Table({ userData }) {
     // const refineData = userData.data[userID];
-    // console.log('refine data', refineData)
-    console.log('userdata', userData)
+    console.log('data', userData)
     const listItems = userData.data.map((item) => 
         <TableItems userData={item} key={item.id}/> 
     )
@@ -72,12 +72,14 @@ export default function Table({ userData }) {
     return (
 
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-   
+        <header className="px-5 py-4 border-b border-gray-500  bg-gray-50 dark:bg-gray-700">
+            <h2 className="font-semibold text-gray-400">Customers</h2>
+        </header>
     <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" className="px-6 py-3">
-                    Product name
+                    Product
                 </th>
                 {/* <th scope="col" className="px-6 py-3">
                     <div className="flex items-center">
@@ -97,8 +99,8 @@ export default function Table({ userData }) {
                     </div>
                 </th>
                 <th scope="col" className="px-6 py-3">
-                    <div className="flex items-center">
-                        Curious?
+                    <div className="flex flex-col items-center">
+                        Buy Me
                     </div> 
                 </th>
             </tr>
