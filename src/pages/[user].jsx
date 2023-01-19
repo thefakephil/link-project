@@ -2,14 +2,17 @@ import LinkNav from '../components/linkNav'
 import Background from '@/components/background'
 import Table from '../components/table'
 import { useRouter } from 'next/router'
+import Avatar from '../components/avatar'
 
 export default function Home({ data }) {
-  console.log('data', data)
   return (
     <div>
       <LinkNav /> 
-      <Background /> 
-      <div className="container mx-auto sm:px-16 px-4 pt-20 pt-48 align-middle h-2/3"> 
+      <Background />
+      <div className='grid place-items-center pt-20'> 
+        <Avatar /> 
+      </div> 
+      <div className="container mx-auto sm:px-28 px-4 pt-20 align-middle h-2/3"> 
       {data && <Table userData={data}/>}
         {/* add 404 component here */}
       </div>
