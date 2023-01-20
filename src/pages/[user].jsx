@@ -1,4 +1,4 @@
-import LinkNav from '../components/linkNav'
+import Nav from '../components/nav'
 import Background from '@/components/background'
 import Table from '../components/table'
 import { useRouter } from 'next/router'
@@ -7,7 +7,7 @@ import Avatar from '../components/avatar'
 export default function Home({ data }) {
   return (
     <div>
-      <LinkNav /> 
+      <Nav /> 
       <Background />
       <div className='grid place-items-center pt-20'> 
         <Avatar /> 

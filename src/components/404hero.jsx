@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-export default function Hero() {
+export default function HeroError () {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -31,12 +31,11 @@ export default function Hero() {
                 </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Data to enrich your online business
-                </h1>
+                <h2 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                  Want this URL?
+                </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
+                 Sign up below and claim to learn more and claim it! 
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <a
